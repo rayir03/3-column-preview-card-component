@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+
+/*Container*/
+
+.container {
+    width: 100%;
+    height: 95vh;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-left: 30px;
+}
+
+.card h3 {
+    font-family: "Big Shoulders Display" ,cursive;
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-size: 45px;
+} 
+
+.card p {
+    font-family:"Lexend Deca", sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 12px;
+}
+
+
+/*1 card*/
+
+.card:nth-of-type(1){
+    background-color: hsl(31, 77%, 52%);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+/*2 card*/
+
+.card:nth-of-type(2){
+    background-color: hsl(184, 100%, 22%);
+}
+
+/*3 card*/
+
+.card:nth-of-type(3){
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+/* buttom */
+
+
+.btn {
+    padding: 10px 18px;
+    font-family: "Lexend Deca", sans-serif;
+    background-color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: transparent;
+    border:.5px solid #fff;
+    color: #fff;
+}
+
+/* 1er buttom */
+
+.btn1{
+    color: hsl(31, 77%, 52%);
+}
+
+/* 2do buttom */
+
+
+.btn2{
+    color: hsl(184, 100%, 22%);
+}
+
+
+/* 3er buttom */
+
+
+.btn3{
+    color: hsl(179, 100%, 13%);
+}
+
+
+/* media */
+
+@media only screen and (max-width: 600px){
+    .container{
+        flex-direction: column;
+        height: auto;
+        margin: 10px 0px 10px 0px ;
+    }
+    .card {
+        border-radius: 0px !important;
+        height: 400px !important;
+    }
+
+    /*1 card*/
+
+    .card:nth-of-type(1){
+        border-top-right-radius: 10px !important;
+        border-top-left-radius: 10px !important;
+    }
+
+    /*3 card*/
+
+    .card:nth-of-type(3){
+        border-bottom-right-radius: 10px !important;
+        border-bottom-left-radius: 10px !important;
+    }
+}
+
+
+
+
+
+
+
+
